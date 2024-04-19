@@ -1,5 +1,5 @@
 
-function reduce(elements, cb, startingValue) {
+function reduceArray(elements, cb, startingValue) {
     let accumulator = startingValue !== undefined ? startingValue : elements[0];
     
     const startIndex = startingValue !== undefined ? 0 : 1;
@@ -10,4 +10,4 @@ function reduce(elements, cb, startingValue) {
     return accumulator;
 }
 
-module.exports = reduce;
+module.exports = reduceArray;
